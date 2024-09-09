@@ -1,0 +1,479 @@
+/*
+Theme Name: Twenty Seventeen
+Description: Used to style blocks.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 General Block Styles
+2.0 Blocks - Common Blocks
+3.0 Blocks - Formatting
+4.0 Blocks - Layout Elements
+5.0 Blocks - Widgets
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 General Block Styles
+--------------------------------------------------------------*/
+
+/* Captions */
+
+[class^="qolet-block-"]:not(.qolet-block-gallery) figcaption {
+    font-style: italic;
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.rtl [class^="qolet-block-"]:not(.qolet-block-gallery) figcaption {
+    text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 Blocks - Common Blocks
+--------------------------------------------------------------*/
+
+/* Paragraph */
+
+p.has-drop-cap:not(:focus)::first-letter {
+    font-size: 5em;
+    margin-top: 0.075em;
+}
+
+/* Image */
+
+.qolet-block-image {
+    margin-bottom: 1.5em;
+}
+
+.qolet-block-image figure {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.qolet-block-image figure.alignleft {
+    margin-right: 1.5em;
+}
+
+.qolet-block-image figure.alignright {
+    margin-left: 1.5em;
+}
+
+.qolet-block-image a,
+.qolet-block-image a:hover,
+.qolet-block-image a:focus,
+.qolet-widget-area .qolet-block-image a,
+.qolet-widget-area .qolet-block-image a:hover,
+.qolet-widget-area .qolet-block-image a:focus {
+    box-shadow: none;
+}
+
+/* Gallery */
+
+.qolet-block-gallery {
+    margin-bottom: 1.5em;
+}
+
+.qolet-block-gallery figcaption {
+    font-style: italic;
+}
+
+.qolet-block-gallery.aligncenter {
+    display: flex;
+    margin: 0 -8px;
+}
+
+/* Quote */
+
+.qolet-block-quote:not(.is-large):not(.is-style-large) {
+    border: 0;
+    padding: 0;
+}
+
+.qolet-block-quote.alignleft p:last-of-type,
+.qolet-block-quote.alignright p:last-of-type {
+    margin-bottom: 0;
+}
+
+.qolet-block-quote cite {
+    color: inherit;
+    font-size: inherit;
+}
+
+/* Audio */
+
+.qolet-block-audio audio {
+    display: block;
+    width: 100%;
+}
+
+/* Cover */
+
+.qolet-block-cover-image.alignright,
+.qolet-block-cover.alignright,
+.qolet-block-cover-image.alignleft,
+.qolet-block-cover.alignleft,
+.qolet-block-cover-image.aligncenter,
+.qolet-block-cover.aligncenter {
+    display: flex;
+}
+
+/* File */
+
+.qolet-block-file .qolet-block-file__button {
+    background-color: #222;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    margin-top: 2em;
+    padding: 0.7em 2em;
+    transition: background-color 0.2s ease-in-out;
+    white-space: pre-line;
+}
+
+.qolet-block-file .qolet-block-file__button:hover,
+.qolet-block-file .qolet-block-file__button:focus {
+    background-color: #767676;
+    box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+3.0 Blocks - Formatting
+--------------------------------------------------------------*/
+
+/* Code */
+
+.qolet-block-code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.qolet-block-code code {
+    font-size: inherit;
+}
+
+/* Pullquote */
+
+.qolet-block-pullquote {
+    border: 0 solid;
+}
+
+.qolet-block-pullquote__citation,
+.qolet-block-pullquote cite {
+    font-size: inherit;
+    text-transform: none;
+}
+
+/* Table */
+
+.qolet-block-table thead th {
+    border-bottom: 2px solid #bbb;
+    padding-bottom: 0.5em;
+}
+
+.qolet-block-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.qolet-block-table th,
+.qolet-block-table td {
+    border: 0;
+}
+
+.rtl .qolet-block-table th,
+.rtl .qolet-block-table td {
+    text-align: right;
+}
+
+/* Calendar */
+
+.qolet-block-calendar th {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+4.0 Blocks - Layout Elements
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+.qolet-block-button .qolet-block-button__link {
+    box-shadow: none;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1.66;
+    margin-top: 2em;
+    padding: 0.7em 2em;
+    transition: background-color 0.2s ease-in-out;
+    white-space: pre-line;
+}
+
+.entry-content .qolet-block-button__link {
+    background-color: #222;
+    color: #fff;
+}
+
+.entry-content .is-style-outline .qolet-block-button__link:not(.has-background) {
+    background-color: transparent;
+}
+
+.entry-content .is-style-outline .qolet-block-button__link:not(.has-text-color) {
+    color: #222;
+}
+
+.colors-dark .qolet-block-button__link {
+    background-color: #fff;
+    color: #000;
+}
+
+.entry-content .qolet-block-button__link:hover,
+.entry-content .qolet-block-button__link:focus,
+.entry-content .is-style-outline .qolet-block-button__link:not(.has-background):hover,
+.entry-content .is-style-outline .qolet-block-button__link:not(.has-background):focus {
+    background-color: #767676;
+    box-shadow: none;
+    color: #fff;
+}
+
+.colors-dark .entry-content .qolet-block-button__link:hover,
+.colors-dark .entry-content .qolet-block-button__link:focus,
+.colors-dark .entry-content .is-style-outline .qolet-block-button__link:not(.has-background):hover,
+.colors-dark .entry-content .is-style-outline .qolet-block-button__link:not(.has-background):focus {
+    background-color: #bbb;
+    color: #000;
+}
+
+.colors-dark .entry-content .is-style-outline .qolet-block-button__link:not(.has-text-color) {
+    color: #fff;
+}
+
+.colors-dark .entry-content .is-style-outline .qolet-block-button__link:not(.has-text-color):hover,
+.colors-dark .entry-content .is-style-outline .qolet-block-button__link:not(.has-text-color):focus {
+    color: #222;
+}
+
+.colors-custom .entry-content .qolet-block-button__link,
+.colors-custom .entry-content .qolet-block-button__link:hover,
+.colors-custom .entry-content .qolet-block-button__link:focus,
+.colors-dark .entry-content .qolet-block-button__link,
+.colors-dark .entry-content .qolet-block-button__link:hover,
+.colors-dark .entry-content .qolet-block-button__link:focus {
+    box-shadow: none;
+}
+
+.colors-custom .entry-content .qolet-block-button__link:hover,
+.colors-custom .entry-content .qolet-block-button__link:focus {
+    color: #fff;
+}
+
+/* Separator */
+
+.qolet-block-separator {
+    border: 0;
+}
+
+.qolet-block-separator:not(.is-style-wide):not(.is-style-dots) {
+    max-width: 100px;
+}
+
+/* Media & Text */
+
+.qolet-block-media-text {
+    margin-bottom: 1.5em;
+}
+
+.qolet-block-media-text *:last-child {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 Blocks - Widgets
+--------------------------------------------------------------*/
+
+/* Archives, Categories & Latest Posts */
+
+.qolet-block-archives.aligncenter,
+.qolet-block-categories.aligncenter,
+.qolet-block-latest-posts.aligncenter {
+    list-style-position: inside;
+    text-align: center;
+}
+
+/* Comments */
+
+.qolet-block-latest-comments article {
+    margin-bottom: 4rem;
+}
+
+.qolet-widget-area .qolet-block-latest-comments article {
+    margin-bottom: 1em;
+}
+
+.blog:not(.has-sidebar) #primary .qolet-block-latest-comments article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary .qolet-block-latest-comments article,
+.search:not(.has-sidebar) #primary .qolet-block-latest-comments article {
+    float: none;
+    width: 100%;
+}
+
+.qolet-block-latest-comments .avatar,
+.qolet-block-latest-comments__comment-avatar {
+    border-radius: 0;
+}
+
+.qolet-block-latest-comments a {
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+}
+
+.qolet-block-latest-comments .qolet-block-latest-comments__comment {
+    border-top: none;
+}
+
+.qolet-block-latest-comments__comment-meta {
+    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 0.4em;
+}
+
+.qolet-block-latest-comments__comment-author,
+.qolet-block-latest-comments__comment-link {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.qolet-block-latest-comments__comment-date {
+    color: #767676;
+    font-size: 10px;
+    font-size: 0.625rem;
+    font-weight: 800;
+    letter-spacing: 0.1818em;
+    margin-top: 0.4em;
+    text-transform: uppercase;
+}
+
+/* Query Loop & Post Template */
+
+.qolet-block-query .qolet-block-post-template>li {
+    border-top: none;
+}
+
+/* Site Logo */
+
+:root .entry-content .qolet-block-site-logo a.custom-logo-link {
+    box-shadow: none;
+}
+
+.entry-content .qolet-block-site-logo img {
+    max-height: none;
+}
+
+/*--------------------------------------------------------------
+6.0 Blocks - Colors
+--------------------------------------------------------------*/
+
+.entry-content .has-pale-pink-color {
+    color: #f78da7;
+}
+
+.entry-content .has-pale-pink-background-color,
+.qolet-block-button.is-style-outline .has-pale-pink-background-color:link {
+    background-color: #f78da7;
+}
+
+.entry-content .has-vivid-red-color {
+    color: #cf2e2e;
+}
+
+.entry-content .has-vivid-red-background-color,
+.qolet-block-button.is-style-outline .has-vivid-red-background-color:link {
+    background-color: #cf2e2e;
+}
+
+.entry-content .has-luminous-vivid-orange-color {
+    color: #ff6900;
+}
+
+.entry-content .has-luminous-vivid-orange-background-color,
+.qolet-block-button.is-style-outline .has-luminous-vivid-orange-background-color:link {
+    background-color: #ff6900;
+}
+
+.entry-content .has-luminous-vivid-amber-color {
+    color: #fcb900;
+}
+
+.entry-content .has-luminous-vivid-amber-background-color,
+.qolet-block-button.is-style-outline .has-luminous-vivid-amber-background-color:link {
+    background-color: #fcb900;
+}
+
+.entry-content .has-light-green-cyan-color {
+    color: #7bdcb5;
+}
+
+.entry-content .has-light-green-cyan-background-color,
+.qolet-block-button.is-style-outline .has-light-green-cyan-background-color:link {
+    background-color: #7bdcb5;
+}
+
+.entry-content .has-vivid-green-cyan-color {
+    color: #00d084;
+}
+
+.entry-content .has-vivid-green-cyan-background-color,
+.qolet-block-button.is-style-outline .has-vivid-green-cyan-background-color:link {
+    background-color: #00d084;
+}
+
+.entry-content .has-pale-cyan-blue-color {
+    color: #8ed1fc;
+}
+
+.entry-content .has-pale-cyan-blue-background-color,
+.qolet-block-button.is-style-outline .has-pale-cyan-blue-background-color:link {
+    background-color: #8ed1fc;
+}
+
+.entry-content .has-vivid-cyan-blue-color {
+    color: #0693e3;
+}
+
+.entry-content .has-vivid-cyan-blue-background-color,
+.qolet-block-button.is-style-outline .has-vivid-cyan-blue-background-color:link {
+    background-color: #0693e3;
+}
+
+.entry-content .has-very-light-gray-color {
+    color: #eee;
+}
+
+.entry-content .has-very-light-gray-background-color,
+.qolet-block-button.is-style-outline .has-very-light-gray-background-color:link {
+    background-color: #eee;
+}
+
+.entry-content .has-cyan-bluish-gray-color {
+    color: #abb8c3;
+}
+
+.entry-content .has-cyan-bluish-gray-background-color,
+.qolet-block-button.is-style-outline .has-cyan-bluish-gray-background-color:link {
+    background-color: #abb8c3;
+}
+
+.entry-content .has-very-dark-gray-color {
+    color: #313131;
+}
+
+.entry-content .has-very-dark-gray-background-color,
+.qolet-block-button.is-style-outline .has-very-dark-gray-background-color:link {
+    background-color: #313131;
+}
